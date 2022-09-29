@@ -62,10 +62,31 @@
                   rounded-br-xl
                   mt-n10
                 >
-                <v-app-bar color="rgba(0,0,0,0)" flat class="ma-8">
-                  <h5>Statistics of your health</h5>
-                </v-app-bar>  
-              </v-card>
+                  <v-app-bar color="rgba(0,0,0,0)" flat class="ma-8">
+                    <h5>Statistics of your health</h5>
+                    <v-spacer></v-spacer>
+                    <v-btn color="teal" text>
+                      2022
+                      <v-icon right>mdi-chevron-down</v-icon>
+                    </v-btn>
+                    <v-btn color="teal" rounded dark depressed> Year </v-btn>
+                    <v-btn text> Month </v-btn>
+                  </v-app-bar>
+                  <template>
+                    <v-sparkline 
+                    :value="value" 
+                    color="teal"
+                    :smooth="radius || false"
+                    :padding="padding"
+                    :line-width="width"
+                    :stroke-linecap="linecap"
+                    :fill="fill"
+                    :type="type"
+                    :auto-line-width="autoLineWidth"
+                    auto-draw
+                    > </v-sparkline>
+                  </template>
+                </v-card>
               </v-col>
             </v-row>
           </v-container>
