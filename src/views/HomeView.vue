@@ -27,12 +27,11 @@
               </v-col>
               <v-col cols="12" sm="12">
                 <v-card
-                  class="mx-12"
-                  rounded-tl-xl
-                  rounded-tr-xl
-                  rounded-bl-xl
-                  rounded-br-xl
-                  mt-n15
+                  class="
+                    mx-12
+                    rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl
+                    mt-n15
+                  "
                 >
                   <v-list-item three-line>
                     <v-list-item-content class="pa-10">
@@ -41,11 +40,11 @@
                         <br />
                         on lung examation
                       </v-list-item-title>
-                      <v-list-subtitle>
+                      <v-list-item-subtitle>
                         The package price includes: consultation <br />
                         of a pulmonolugist, spriography , cardiogram
                         <span class="teal--text"> > </span>
-                      </v-list-subtitle>
+                      </v-list-item-subtitle>
                     </v-list-item-content>
                     <v-list-item-avatar tile size="150" class="pr-5">
                       <img src="../assets/lungs.png" alt="" />
@@ -55,12 +54,11 @@
               </v-col>
               <v-col cols="12" sm="12">
                 <v-card
-                  class="mx-12"
-                  rounded-tl-xl
-                  rounded-tr-xl
-                  rounded-bl-xl
-                  rounded-br-xl
-                  mt-n10
+                  class="
+                    mx-12
+                    rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl
+                    mt-n10
+                  "
                 >
                   <v-app-bar color="rgba(0,0,0,0)" flat class="ma-8">
                     <h5>Statistics of your health</h5>
@@ -73,19 +71,85 @@
                     <v-btn text> Month </v-btn>
                   </v-app-bar>
                   <template>
-                    <v-sparkline 
-                    :value="value" 
-                    color="teal"
-                    :smooth="radius || false"
-                    :padding="padding"
-                    :line-width="width"
-                    :stroke-linecap="linecap"
-                    :fill="fill"
-                    :type="type"
-                    :auto-line-width="autoLineWidth"
-                    auto-draw
-                    > </v-sparkline>
+                    <v-sparkline
+                      :value="value"
+                      color="teal"
+                      :smooth="radius || false"
+                      :padding="padding"
+                      :line-width="width"
+                      :stroke-linecap="linecap"
+                      :fill="fill"
+                      :type="type"
+                      :auto-line-width="autoLineWidth"
+                      auto-draw
+                    >
+                    </v-sparkline>
                   </template>
+                </v-card>
+              </v-col>
+              <v-col cols="12" sm="6">
+                <v-card
+                  class="
+                    mx-12
+                    rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl
+                    mt-n4
+                  "
+                  color="teal"
+                >
+                  <v-list-item three-line>
+                    <v-list-item-content class="pa-2">
+                      <v-list-item-title class="headline mb-1" id="styleDiv">
+                        Heart Rate <br />
+                        <h2>112 bpm</h2>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                    <v-avatar tile size="150" class="pr-10">
+                      <v-icon size="100" color="white">fas fa-heartbeat</v-icon>
+                    </v-avatar>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col cols="12" sm="6">
+                <v-card
+                  class="
+                    mx-12
+                    rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl
+                    mt-n12
+                  "
+                >
+                  <v-app-bar color="rgba(0,0,0,0)" flat class="ma-8">
+                    <h5>Your activity</h5>
+                    <v-spacer></v-spacer>
+                    <v-btn color="teal" rounded dark depressed>Week</v-btn>
+                    <v-btn text>Month</v-btn>
+                  </v-app-bar>
+                  <v-progress-circular
+                    rotate="360"
+                    size="100"
+                    width="15"
+                    value="50"
+                    color="teal"
+                    class="mt-n5 ml-5 mb-2"
+                    >50</v-progress-circular
+                  >
+                  <v-progress-circular
+                    rotate="360"
+                    size="100"
+                    width="15"
+                    value="70"
+                    color="orange"
+                    class="mt-n5 ml-5 mb-2"
+                    >70</v-progress-circular
+                  >
+                  <v-progress-circular
+                    rotate="360"
+                    size="100"
+                    width="15"
+                    value="85"
+                    color="red"
+                    class="mt-n5 ml-5 mb-2"
+                    >85</v-progress-circular
+                  >
                 </v-card>
               </v-col>
             </v-row>
@@ -113,9 +177,18 @@ export default {
     type: "trend",
     autoLineWidth: false,
   }),
+  mounted() {
+    this.styleDiv();
+  },
   computed: {
     theme() {
       return this.$vuetify.them.dark ? "dark" : "light";
+    },
+  },
+  methods: {
+    styleDiv() {
+      document.querySelector("#styleDiv").style = "color:white";
+      console.log("styled this div");
     },
   },
 };
