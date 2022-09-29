@@ -47,6 +47,15 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-list style="position: absolute; bottom: 0" class="ml-3">
+      <v-list-item router to="/">
+        <v-list-item-action>
+          <v-icon right>
+            fas fa-sign-out-alt
+          </v-icon>
+        </v-list-item-action>
+      </v-list-item>
+      </v-list>
     </v-navigation-drawer>
   </nav>
 </template>
