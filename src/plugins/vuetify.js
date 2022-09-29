@@ -11,7 +11,7 @@ export default new Vuetify({
     iconfont: " md" || "fa",
   },
   theme: {
-    thems: {
+    themes: {
       dark: {
         background: colors.green.lighten5,
       },
