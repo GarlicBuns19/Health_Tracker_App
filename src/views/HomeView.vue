@@ -158,7 +158,93 @@
       </v-flex>
       <v-flex md4>
         <v-app :style="{ background: $vuetify.theme.themes.light.background }">
-          <v-container> </v-container>
+          <v-container>
+            <v-row>
+              <v-col cols="12" sm="12">
+                <v-list two-line>
+                  <v-list-item>
+                    <v-list-item-avatar>
+                      <img
+                        src="https://cdn.vuetifyjs.com/images/lists/3.jpg"
+                        alt=""
+                      />
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title>Anastasia Turner</v-list-item-title>
+                      <v-list-item-subtitle class="teal--text"
+                        >35 years, Houston</v-list-item-subtitle
+                      >
+                    </v-list-item-content>
+                    <v-space></v-space>
+                    <v-icon color="teal">mdi-menu</v-icon>
+                  </v-list-item>
+                </v-list>
+              </v-col>
+              <v-col cols="12" md="4">
+                <v-row>
+                  <v-col cols="12" md="2">
+                    <v-card height="50px" width="10px" color="green"> </v-card>
+                  </v-col>
+                  <v-col cols="12" md="10">
+                    <v-list two-line subheader class="ml-n8">
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-list-item-subtitle>
+                            Blood
+                          </v-list-item-subtitle>
+                          <v-list-item-title>
+                            Blood
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
+                  </v-col>
+                </v-row>
+              </v-col>
+              <v-col cols="12" md="4">
+                <v-row>
+                  <v-col cols="12" md="2">
+                    <v-card height="50px" width="10px" color="red"> </v-card>
+                  </v-col>
+                  <v-col cols="12" md="10">
+                    <v-list two-line subheader class="ml-n8">
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-list-item-subtitle>
+                            Height
+                          </v-list-item-subtitle>
+                          <v-list-item-title>
+                            100 cm
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
+                  </v-col>
+                </v-row>
+              </v-col>
+              <v-col cols="12" md="4">
+                <v-row>
+                  <v-col cols="12" md="2">
+                    <v-card height="50px" width="10px" color="grey"> </v-card>
+                  </v-col>
+                  <v-col cols="12" md="10">
+                    <v-list two-line subheader class="ml-n8">
+                      <v-list-item>
+                        <v-list-item-content>
+                          <v-list-item-subtitle>
+                            Weight
+                          </v-list-item-subtitle>
+                          <v-list-item-title>
+                            68 kg
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
+                  </v-col>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-app>
       </v-flex>
     </v-layout>
