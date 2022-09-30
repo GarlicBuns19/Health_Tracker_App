@@ -189,12 +189,8 @@
                     <v-list two-line subheader class="ml-n8">
                       <v-list-item>
                         <v-list-item-content>
-                          <v-list-item-subtitle>
-                            Blood
-                          </v-list-item-subtitle>
-                          <v-list-item-title>
-                            Blood
-                          </v-list-item-title>
+                          <v-list-item-subtitle> Blood </v-list-item-subtitle>
+                          <v-list-item-title> Blood </v-list-item-title>
                         </v-list-item-content>
                       </v-list-item>
                     </v-list>
@@ -210,12 +206,8 @@
                     <v-list two-line subheader class="ml-n8">
                       <v-list-item>
                         <v-list-item-content>
-                          <v-list-item-subtitle>
-                            Height
-                          </v-list-item-subtitle>
-                          <v-list-item-title>
-                            100 cm
-                          </v-list-item-title>
+                          <v-list-item-subtitle> Height </v-list-item-subtitle>
+                          <v-list-item-title> 100 cm </v-list-item-title>
                         </v-list-item-content>
                       </v-list-item>
                     </v-list>
@@ -231,17 +223,126 @@
                     <v-list two-line subheader class="ml-n8">
                       <v-list-item>
                         <v-list-item-content>
-                          <v-list-item-subtitle>
-                            Weight
-                          </v-list-item-subtitle>
-                          <v-list-item-title>
-                            68 kg
-                          </v-list-item-title>
+                          <v-list-item-subtitle> Weight </v-list-item-subtitle>
+                          <v-list-item-title> 68 kg </v-list-item-title>
                         </v-list-item-content>
                       </v-list-item>
                     </v-list>
                   </v-col>
                 </v-row>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-btn text>
+                  October
+                  <v-icon right>mdi-chevron-down</v-icon>
+                </v-btn>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" outlined color="teal darken-1">
+                        Mo
+                      </v-btn>
+                    </v-list-item-content>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" outlined color="teal darken-1">
+                        Tu
+                      </v-btn>
+                    </v-list-item-content>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" outlined color="teal darken-1">
+                        We
+                      </v-btn>
+                    </v-list-item-content>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" outlined color="teal darken-1">
+                        Th
+                      </v-btn>
+                    </v-list-item-content>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" color="teal darken-1" dark>
+                        Fr
+                      </v-btn>
+                    </v-list-item-content>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" outlined color="teal darken-1">
+                        Sa
+                      </v-btn>
+                    </v-list-item-content>
+                    <v-list-item-content>
+                      <v-btn class="mr-1" outlined color="teal darken-1">
+                        Su
+                      </v-btn>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-card
+                  class="
+                    mx-12
+                    rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl
+                    mt-n4
+                    py-4
+                  "
+                  color="teal"
+                  dark
+                  flat
+                >
+                  <v-list-item three-line>
+                    <v-list-item-avatar tile size="30">
+                      <v-icon size="30">
+                        mdi-tooth
+                      </v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content class="pa-2">
+                      <v-list-item-title class="headline mb-1">
+                        Dentist <br>
+                        <h6>8:00 -9:30</h6>
+                        <h6>Dr.John Grey(cab 45)</h6>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col cols="12" sm="12">
+                <v-card
+                  class="
+                    mx-12
+                    rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl
+                    mt-n4
+                    py-4
+                  "
+                  color="teal lighten-5"
+                  flat
+                >
+                  <v-list-item three-line>
+                    <v-list-item-avatar tile size="30">
+                      <v-icon size="30">
+                        fas fa-heartbeat
+                      </v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content class="pa-2">
+                      <v-list-item-title class="headline mb-1">
+                        Cardiologist <br>
+                        <h6>9:45 - 11:50</h6>
+                        <h6>Dr.Steve Wix(cab 38)</h6>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col cols="12" sm>
+                <v-btn text>
+                  Your Treatment
+                  <v-icon right>
+                    mdi-chevron-down
+                  </v-icon>
+                </v-btn>
+              </v-col>
+              <v-col>
+                
               </v-col>
             </v-row>
           </v-container>
